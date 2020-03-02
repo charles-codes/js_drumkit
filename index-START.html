@@ -64,7 +64,7 @@
 
 function removeTransition(event) {
     if (event.propertyName !== 'transform') return; // skip it if it's not a transform
-    this.classList.remove('playing');
+    this.classList.remove('playing'); // removes class to affect styling of keys
   }
 
 function playSound(event) {
@@ -73,12 +73,13 @@ function playSound(event) {
   if (!audio) return; // if there is no audio then the function is prevented from runnin
   audio.currentTime = 0; // rewinds the audio clip to its start
   audio.play();
-  key.classList.add('playing');
+  key.classList.add('playing'); // adds class to affect styling of keys
 }
 
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-  window.addEventListener('keydown', playSound);
+  window.addEventListener('keydown', playSound); // calling function that plays the soundbytes 
+
 </script>
 
 
