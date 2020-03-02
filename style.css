@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
-  background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+  /* background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center; */
+  background: url(https://elements-video-cover-images-0.imgix.net/files/231557732/preview.jpg?auto=compress&crop=edges&fit=crop&fm=jpeg&h=800&w=1200&s=141b73dfb608efc9d2926b2405759b26) bottom center;
   background-size: cover;
 }
 
@@ -13,11 +14,30 @@ body,html {
 h1 {
   color: white;
   border: solid black 5px;
-  background-color: black;
   width: 500px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: .5rem;
   padding: 10px;
+  margin-left: 25px;
+  text-shadow: 0 0 .5rem black;
+  text-align: center;
+}
+
+#h1_subtext {
+  color: #ffc600;
+  font-size: 14px;
+}
+
+h2 {
+  color: #ffc600;
+  border: solid black 5px;
+  width: 400px;
+  height: 27px;
+  border-radius: .5rem;
+  padding: 10px;
+  margin-left: 25px;
+  text-shadow: 0 0 .5rem black;
+  text-align: center;
 }
 
 .keys {
